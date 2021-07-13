@@ -1,0 +1,18 @@
+<table class="table table-hover">
+    <thead class="thead-light">
+      <tr>             
+        <th scope="col">Nome</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Região</th>
+        <th scope="col">Instruções</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let meal of meals" style="cursor: pointer;">  
+<td>{{meal.name}}</td>
+<td>{{meal.category}}</td>
+<td>{{meal.area}}</td>
+<td>{{meal.instructions}}</td>
+     </tr>
+    </tbody>
+  </table>
